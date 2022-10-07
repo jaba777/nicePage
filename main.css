@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300&family=Raleway:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header .header-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2%;
+}
+
+.header i{
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.u-clearfix{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('./Images/background-1.jpg');
+    background-position: 50% 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.clearfix-child{
+    color: #fff;
+    margin: auto;
+    padding-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.clearfix-child h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-child p{
+    font-size: 2.25rem;
+}
+
+.first-child span{
+    margin-top: 2rem;
+}
+
+.clearfix-href{
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 2rem;
+}
+
+.clearfix-href:hover{
+    color: #fff;
+}
+
+.clearfix-img{
+    width: 734px;
+    height: 706px;
+    
+    top: 10rem;
+    right: 5rem;
+}
+
+.clearfix-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.inspiration-tech{
+    width: 100%;
+    background: #43005d;
+}
+
+.inspirate-child{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.inspirate-images>img:nth-child(1){
+    height: 619px;
+    width: 512px;
+    margin: -148px auto 0 0;
+    object-fit: cover;
+}
+.inspirate-images>img:nth-child(2){
+    width: 284px;
+    height: 284px;
+    margin: 212px auto -72px -150px;
+    z-index: 1;
+}
+
+.inspire-text{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.inspire-text>p:nth-child(1){
+    font-size: 8rem;
+    font-weight: 300;
+}
+
+.inspire-text h3{
+    color: #f70647;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.inspire-text>p:nth-child(3){
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.inspirate-child-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+.inspire-images-2{
+  
+}
+
+.inspire-images-2>img:nth-child(1){
+    margin: 50px -10px auto 500px;
+}
+
+.inspire-images-2>img:nth-child(2){
+    width: 568px;
+    height: 634px;
+    object-fit: cover;
+    z-index: 1;
+    margin: -260px auto 100px 200px;
+}
+
