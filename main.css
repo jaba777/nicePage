@@ -504,10 +504,209 @@ body{
     font-weight: 600;
 }
 
+
+@media (max-width: 991px){
+    .dream-container .dream-title{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .dream-container h2{
+        font-size: 3rem;
+    }
+
+    .dream-container p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .dream-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .dream-container .dream-title{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .dream-container h2{
+        font-size: 4rem;
+    }
+
+    .dream-container p{
+        font-size: 20px;
+    }
+
+    .dream-container input{
+        background: transparent;
+        border: 3px solid #f70647;
+        width: 400px;
+        height: 40px;
+        padding: 0.5rem 1rem;
+    }
+    
+    .dream-container textarea{
+        background: transparent;
+        border: 3px solid #f70647;
+        padding: 0.5rem 1rem;
+    }
+
+
+}
+
+@media (max-width: 575px){
+    .dream-container h2{
+        font-size: 2.25rem;
+    }
+
+    .dream-container h2 br{
+        display: none;
+    }
+    
+     .dream-container .dream-title{
+        width: 60%;
+        max-width: 95%;
+    }
+
+    .dream-container p{
+        font-size: 15px;
+    }
+
+    .dream-container input{
+        background: transparent;
+        border: 3px solid #f70647;
+        width: 300px;
+        height: 40px;
+        padding: 0.5rem 1rem;
+    }
+    
+    .dream-container textarea{
+        width: 300px;
+    }
+}
+
+.grids{
+    width: 100%;
+}
+
 .grid-cont .first{
     background-image: url('./Images/grcell2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 650px;
+}
+
+.grid-cont .second-box{
+    background: #43005d;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1.5rem;
+    gap: 1rem;
+}
+
+.second-box>p:nth-child(1){
+    font-size: 7rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.second-box h3{
+    font-size: 3.25rem;
+    color: #f70647;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.second-box>p:nth-child(3){
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.grid-cont .third-box{
+    background-image: url('./Images/phone6.jpg');
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 3rem 2.5rem;
+}
+
+.third-box h3{
+    font-size: 3rem;
+    color: #f70647;
+    font-weight: 700;
+}
+
+.third-box p{
+    font-size: 20px;
+}
+
+@media (max-width: 991px){
+    .grid-cont h3{
+        font-size: 1.875rem;
+    }
+
+    .grid-cont p{
+        font-size: 18px;
+    }
+
+    .second-box>p:nth-child(3){
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 767px){
+    .grid-cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-cont div{
+        width: 100%;
+    }
+}
+
+
+.grid-cont .forth-box{
+    background-image: url('./Images/Untitledd-5.jpg');
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.get-app{
+    background-image: url('./Images/xc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: 50% 50%;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.get-app h3{
+    font-size: 3rem;
+    color: #f70647;
+    font-weight: 700;
+}
+
+.get-app .text-app{
+    width: 500px;
+    font-size: 1.125rem;
+    color: #e2a8f8;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 90%;
 }
