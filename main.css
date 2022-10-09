@@ -157,6 +157,28 @@ body{
     }
 }
 
+@media (max-width: 608px){
+    .clearfix-child{
+        display: flex;
+        flex-direction: column;
+        gap: 15rem;
+        align-items: center;
+    }
+    .clearfix-child .first-child{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .clearfix-img{
+        width: 280px;
+        height: 300px;
+        margin-left: 1rem;
+    }
+
+    
+    
+}
+
 
 
 .inspiration-tech{
@@ -267,8 +289,8 @@ body{
     }
 
     .inspire-text{
-        width: 50%;
-        max-width: 70%;
+        width: 60%;
+        max-width: 100%;
     }
 
     .inspire-text>p:nth-child(1){
@@ -398,7 +420,51 @@ body{
     }
 }
 
+@media (max-width: 608px){
+  .inspiration-tech{
+    padding: 0;
+  }
+  .inspirate-child{
+    display: flex;
+    
+  }
+    .inspirate-images>img:nth-child(1){
+        height: 420px;
+        width: 323px;
+        margin: 0.5rem auto;
+    }
 
+    .inspirate-images>img:nth-child(2){
+        width: 180px;
+        height: 180px;
+        margin-top: -4rem;
+        margin-left: 8rem;
+    }
+
+    .inspire-text{
+        width: 100%;
+       
+    }
+
+    .inspire-text>p:nth-child(1){
+        font-size: 6rem;
+        font-weight: 300;
+    }
+    
+    .inspire-text h3{
+        color: #f70647;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .inspire-text>p:nth-child(3){
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6;
+        width: 100%;
+    }
+    
+}
 
 .number-counters{
     margin-top: 8rem;
@@ -708,5 +774,42 @@ body{
     text-align: center;
     line-height: 1.6;
     font-weight: 400;
-    max-width: 90%;
+    max-width: 100%;
+}
+
+@media(max-width: 608px){
+    .get-app{
+        width: 100%;
+        padding: 0;
+    }
+
+    .get-app h3{
+        font-size: 2rem;
+        color: #f70647;
+        font-weight: 600;
+    }
+
+    .text-app{
+        width: 100%;
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
+
+.footer{
+    width: 100%;
+    background: #333333;
+    padding: 1rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    color: #fff;
+    font-size: 12px;
+}
+.footer p a{
+    color: #43005d;
+    font-size: 12px;
 }
