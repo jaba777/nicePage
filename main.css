@@ -94,7 +94,7 @@ body{
     object-fit: contain;
 }
 
-@media all and (max-width: 991px){
+@media (max-width: 991px){
     .first-clearfix h1{
         font-size: 3rem;
         color: #fff;
@@ -106,7 +106,7 @@ body{
     }
 }
 
-@media all and (max-width: 774px){
+@media (max-width: 774px){
     .first-clearfix{
         margin-left: 0px;
     }
@@ -124,7 +124,7 @@ body{
     }
 }
 
-@media all and (max-width: 500px){
+@media (max-width: 500px){
     .clearfix-cont{
         display: flex;
         flex-direction: column;
@@ -133,7 +133,7 @@ body{
     }
 }
 
-@media all and (max-width: 378px){
+@media (max-width: 378px){
     .second-clearfix{
         width: 200px;
         height: 306px;
@@ -201,7 +201,7 @@ body{
     line-height: 1.6;
 }
 
-@media all and (max-width: 991px){
+@media (max-width: 991px){
     .inspire-img{
         width: 442px;
         height: 543px;
@@ -223,7 +223,7 @@ body{
 
 }
 
-@media all and (max-width: 769px){
+@media (max-width: 769px){
     .inspire-container{
         display: flex;
         flex-direction: column;
@@ -236,7 +236,7 @@ body{
 
 }
 
-@media all and (max-width: 578px){
+@media (max-width: 578px){
     .inspire-img{
         width: 342px;
         height: 443px;
@@ -249,7 +249,7 @@ body{
 
 }
 
-@media all and (max-width: 400px){
+@media (max-width: 400px){
     .inspire-img{
         width: 300px;
         height: 400px;
@@ -347,7 +347,7 @@ body{
     object-fit: contain;
 }
 
-@media all and (max-width: 1189px){
+@media (max-width: 1189px){
     .dots{
         width: 400px;
     }
@@ -369,7 +369,7 @@ body{
     }
 }
 
-@media all and (max-width: 779px){
+@media (max-width: 779px){
     .skills-container{
         display: flex;
         flex-direction: column;
@@ -382,7 +382,7 @@ body{
 
 }
 
-@media all and (max-width: 570px){
+@media (max-width: 570px){
     .phone-2{
         margin-bottom: -150px;
         margin-left: -50px;
