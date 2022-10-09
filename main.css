@@ -597,16 +597,12 @@ body{
 }
 
 
-
-
-.grid-cont{
+.grids{
     width: 100%;
+    overflow-x: hidden;
 }
 
-.grid-cont div{
-    
-    max-width: 100%;
-}
+
 
 .grid-cont .first{
     background-image: url('./Images/grcell2.jpg');
