@@ -1,22 +1,56 @@
+let sectionCounters = document.querySelector('#section_counters');
 let valueDisplays=document.querySelectorAll('.num');
-let interval = 4000;
+let interval = 5000;
 
-valueDisplays.forEach(valueDisplay => {
-    let startValue=0;
+    /*valueDisplays.forEach(valueDisplay => {
+        let startValue=0;
+    
+       let endValue=parseInt(valueDisplay.getAttribute('data-val'));
+    
+       let duration = Math.floor(interval / endValue);
+    
+       let counter = setInterval(function(){
+    
+        startValue+=1;
+        valueDisplay.textContent=startValue;
+    
+        if(startValue == endValue){
+            clearInterval(counter)
+        }
+    
+       }, duration)
+    
+    })*/
 
-   let endValue=parseInt(valueDisplay.getAttribute('data-val'));
+    let CounterObserver= new IntersectionObserver(
+        (entries, observer) =>{
+            let [entry] = entries;
+            if(!entry.isIntersecting) return;
 
-   let duration = Math.floor(interval / endValue);
+            let interval = 5000;
 
-   let counter = setInterval(function(){
+    valueDisplays.forEach(valueDisplay => {
+        let startValue=0;
+    
+       let endValue=parseInt(valueDisplay.getAttribute('data-val'));
+    
+       let duration = Math.floor(interval / endValue);
+    
+       let counter = setInterval(function(){
+    
+        startValue+=1;
+        valueDisplay.textContent=startValue;
+    
+        if(startValue == endValue){
+            clearInterval(counter)
+        }
+    
+       }, duration)
+    
+    })
+     }, {
+        root: null,
+        threshold: 0.4,
+    })
 
-    startValue+=1;
-    valueDisplay.textContent=startValue;
-
-    if(startValue == endValue){
-        clearInterval(counter)
-    }
-
-   }, duration)
-
-})
+    CounterObserver.observe(sectionCounters)
